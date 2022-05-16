@@ -1,2 +1,2 @@
 # drink-menu
-Menu for drinks practice
+Menu for drinks
