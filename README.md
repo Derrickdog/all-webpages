@@ -1,2 +1,2 @@
 # drink-menu
-Menu for drinks
+https://derrickdog.github.io/drink-menu/
