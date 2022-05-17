@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto&display=swap');
 
 body{
     /* raspberry background-color: rgb(255, 0, 125);*/
     background: linear-gradient(90deg, blue, red);
-    font-family: Helvetica, Arial, sans-serif;
+    font-family: Roboto, Helvetica, Arial, sans-serif;
     color: white;
 }
 
@@ -40,26 +40,15 @@ li{
     padding: 10px 0;
 }
 
+a{
+    color: white;
+    text-decoration: none;
+}
+
+a:visited{
+    color: white;
+}
+
 a:hover{
-    text-decoration: underline;
+    color: black;
 }
-
-/*
-h2{
-    text-align: center;
-    font-size: 40px;
-    margin: 0;
-    font-weight: lighter;
-}
-
-section{
-    padding: 25px;
-}
-
-section p{
-    font-size: 28px;
-    margin: 0;
-    text-align: center;
-}
-
-*/
