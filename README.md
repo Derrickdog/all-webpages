@@ -1,2 +1,2 @@
 # website-examples
-https://derrickdog.github.io/drink-menu/
+https://derrickdog.github.io/website-examples/
