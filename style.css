@@ -3,7 +3,7 @@
 body{
     /* raspberry background-color: rgb(255, 0, 125);*/
     background: linear-gradient(90deg, blue, red);
-    font-family: Roboto, Helvetica, Arial, sans-serif;
+    font-family: Helvetica, Arial, sans-serif;
     color: white;
 }
 
