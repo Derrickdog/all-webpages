@@ -52,3 +52,7 @@ a:visited{
 a:hover{
     color: black;
 }
+
+footer{
+    height: 50px;
+}
