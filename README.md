@@ -1,2 +1,2 @@
-# website-examples
-https://derrickdog.github.io/website-examples/
+# all-webpages
+https://derrickdog.github.io/all-webpages/
