@@ -13,7 +13,25 @@
     <script>
         const img = document.querySelector('img');
         newImage();
-        function newImage () {
+
+        async function newImage() {
+            const response = await fetch('https://api.giphy.com/v1/gifs/translate?api_key=PpvYDE7ERLFid4HmunLpFvftfNtkGC4V&s=dog', {mode: 'cors'});
+            const dogData = await response.json();
+            img.src = dogData.data.images.original.url;
+        }
+
+        async function searchImage() {
+            const text = document.getElementById('searchbox').value;
+            try {
+                const response = await fetch(`https://api.giphy.com/v1/gifs/translate?api_key=PpvYDE7ERLFid4HmunLpFvftfNtkGC4V&s=${text}`, {mode: 'cors'});
+                const searchData = await response.json();
+                img.src = searchData.data.images.original.url;
+            } catch(error) {
+                newImage();
+            }
+        }
+
+        function newImagePromise() {
             fetch('https://api.giphy.com/v1/gifs/translate?api_key=PpvYDE7ERLFid4HmunLpFvftfNtkGC4V&s=dog', {mode: 'cors'})
                 .then(function(response) {
                     return response.json();
@@ -22,7 +40,8 @@
                     img.src = response.data.images.original.url;
                 });
         }
-        function searchImage () {
+        
+        function searchImagePromise() {
             const text = document.getElementById('searchbox').value;
             fetch(`https://api.giphy.com/v1/gifs/translate?api_key=PpvYDE7ERLFid4HmunLpFvftfNtkGC4V&s=${text}`, {mode: 'cors'})
                 .then(function(response) {
