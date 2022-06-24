@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>From Validation</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="form.js" defer></script>
+</head>
+<body>
+    <h1>Form</h1>
+    <!-- EMAIL COUNTRY ZIPCODE PASSWORD PASSWORDCONFIRM-->
+    <form action="#" method="post">
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required>
+        <p id="email-err" class="error"></p>
+
+        <label for="country">Country:</label><br>
+        <input type="text" id="country" name="country" required>
+        <p id="country-err" class="error"></p>
+
+        <label for="zip">Zip Code:</label><br>
+        <input type="text" id="zip" name="zip" pattern="(\d{5}([\-]\d{4})?)" required><br>
+        <p id="zip-err" class="error"></p>
+
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password" required><br>
+        <p id="password-err" class="error"></p>
+
+        <label for="password_confirm">Confirm Password:</label><br>
+        <input type="password" id="password-confirm" name="password" required><br><br>
+        <p id="password-confirm-err" class="error"></p>
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
