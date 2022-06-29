@@ -5,11 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GIPHY API</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <input id="searchbox" type="text">
-    <button onclick="searchImage()">Search</button><br>
-    <img src="#">
+    <div class="container">
+        <h1>Search GIFs</h1>
+        <input id="searchbox" type="text">
+        <button onclick="searchImage()">Search</button><br>
+        <img src="#">
+    </div>
     <script>
         const img = document.querySelector('img');
         newImage();
